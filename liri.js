@@ -25,15 +25,17 @@ inquirer.prompt([
     var command = user.pickAPI;
     var input = user.searchCriteria;
     switch (command) {
-        case 'Movies':
-            moviesFunc(input);
-            break;
-        case 'Music':
-            spotifyFunc(input);
-            break;
         case 'Concerts':
             concertFunc(input);
             break;
+        case 'Music':
+            spotifyFunc(input);
+            break;    
+        case 'Movies':
+            moviesFunc(input);
+            break;
+        
+        
         // case 'do-what-it-says':
         //     //Something Else func
         //     break;
